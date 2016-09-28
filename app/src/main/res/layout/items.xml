@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+    <TextView android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:id="@+id/viewspot"
+   android:padding="6dip"    
+   android:layout_weight="1" 
+   android:textColor="#9B30FF"
+        android:textSize="25dp"
+   ></TextView>
+   
+   <ImageView android:layout_width="100dip" 
+  android:layout_height="wrap_content" 
+  android:id="@+id/add" 
+  android:padding="10dip"    
+  android:src="@drawable/right"></ImageView>
+  
+</LinearLayout>

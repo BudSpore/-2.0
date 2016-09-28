@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing6">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="祝您旅途愉快"
+                android:layout_marginLeft="25dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+
+
+            <com.ping.myapp32.RippleView
+                android:id="@+id/more"
+                android:layout_width="?android:actionBarSize"
+                android:layout_height="?android:actionBarSize"
+                android:layout_toLeftOf="@+id/more2"
+                android:layout_margin="5dp"
+                ripple:rv_centered="true"></com.ping.myapp32.RippleView>
+
+            <com.ping.myapp32.RippleView
+                android:id="@+id/more2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                ripple:rv_type="doubleRipple"></com.ping.myapp32.RippleView>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/light1"
+    android:text="防盗锁状态："
+    android:textSize="30sp"
+    android:layout_below="@+id/actionbar"
+    android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/light2"
+        android:textSize="30sp"
+        android:layout_below="@+id/actionbar"
+        android:layout_toEndOf="@+id/light1" />
+
+    <ListView
+        android:layout_below="@+id/light1"
+        android:id="@+id/listview"
+        android:scrollbars="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/light1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>
